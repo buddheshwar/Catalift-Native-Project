@@ -155,23 +155,24 @@ const SignUpTab = () => {
               setDayOpen(false);
               setMonthOpen(false);
               setYearOpen(false);
-               placeholder='Gender'
+
             }}
             setValue={setGenderValue}
             setItems={setGenderItems}
             style={styles.dropdown}
+            placeholder='Gender'
           />
         </View>
 
 
         <FormLabel text="Phone Number *" />
-        <TextInput style={styles.input} keyboardType="phone-pad" placeholder='Phone Number'/>
+        <TextInput style={styles.input} keyboardType="phone-pad" placeholder='Phone Number' />
 
         <FormLabel text="Email Address *" />
         <TextInput style={styles.input} keyboardType="email-address" placeholder='Email Address' />
 
         <FormLabel text="LinkedIn" />
-        <TextInput style={styles.input} placeholder='LinkedIn'/>
+        <TextInput style={styles.input} placeholder='LinkedIn' />
         <View>
           <TouchableOpacity style={[styles.btnSignUp]} onPress={handleSubmit}>
             <Text style={[styles.btnText]}>Sign-Up</Text>
